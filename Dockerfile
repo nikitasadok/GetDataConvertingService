@@ -11,7 +11,7 @@ COPY . .
 
 RUN go build 
 
-FROM alpine
+FROM ubuntu
 WORKDIR /app
 COPY --from=builder /app/main .
 CMD ["./main"]
