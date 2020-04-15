@@ -9,7 +9,7 @@ import (
 
 var endpoint = flag.String("endpoint", "http://localhost:29999", "Enter valid endpoint of "+
 	"DB service")
-
+//testing githubactions
 func main() {
 	flag.Parse()
 	router := routes.NewRouter()
